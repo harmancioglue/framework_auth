@@ -2,10 +2,16 @@
 
 class GeneralUtils
 {
+    public static function getBaseModelPath()
+    {
+        $projectPath = self::getProjectPath();
+        $baseModelPath = $projectPath.'/model/BaseModel.php';
+        return $baseModelPath;
+    }
 
     public static function getControllerPath($controller)
     {
-        $project_path = dirname(dirname(__FILE__));
+        $project_path = self::getProjectPath();
         $controller_path = $project_path. '/controller/';
 
         return $controller_path. ucwords($controller) . '.php';
@@ -22,7 +28,7 @@ class GeneralUtils
 
     public static function getModelPath($model)
     {
-        $project_path = dirname(dirname(__FILE__));
+        $project_path = self::getProjectPath();
         $model_path = $project_path. '/model/';
 
         return $model_path. ucwords($model) . '.php';
@@ -37,7 +43,7 @@ class GeneralUtils
     }
 
     public static function getViewPath($view){
-        $project_path = dirname(dirname(__FILE__));
+        $project_path = self::getProjectPath();
         $view_path = $project_path. '/view/';
 
         return $view_path. $view . '.php';
@@ -48,5 +54,9 @@ class GeneralUtils
             return true;
         }
         return false;
+    }
+
+    public static function getProjectPath(){
+        return dirname(dirname(__FILE__));
     }
 }

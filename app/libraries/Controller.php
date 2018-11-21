@@ -5,6 +5,9 @@ class Controller
     public function model($model)
     {
         if (GeneralUtils::checkModelExist($model)){
+
+            require_once (GeneralUtils::getBaseModelPath());
+
             require_once (GeneralUtils::getModelPath($model));
             return new $model;
         }

@@ -1,12 +1,12 @@
 <?php
 
-class Home extends Controller
+class Test extends Controller
 {
     private $mdl;
 
     public function __construct()
     {
-       $this->mdl = $this->model('Model');
+        $this->mdl = $this->model('Tests');
     }
 
     public function index()
@@ -14,5 +14,4 @@ class Home extends Controller
         $this->mdl->getPosts();
         $this->mdl->getPosts();
     }
-
 }

@@ -1,7 +1,12 @@
 <?php
 
+/**
+ * Singleton is implemented
+ */
 class Database
 {
+    private static $instance = null;
+
     private $db;
 
     private $host = DB_HOST;
@@ -12,9 +17,18 @@ class Database
 
     private $statement;
 
-    public function __construct()
+    private function __construct()
     {
         $this->connect();
+    }
+
+    public static function getDbInstance()
+    {
+        if (is_null(self::$instance)){
+            self::$instance = new Database();
+        }
+
+        return self::$instance;
     }
 
     private function connect()
