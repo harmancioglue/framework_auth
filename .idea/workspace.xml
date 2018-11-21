@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f0e7e2f-9285-412c-8519-5b6514f28e04" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controller/Test.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/model/BaseModel.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/model/Tests.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controller/Home.php" afterPath="$PROJECT_DIR$/app/controller/Home.php" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/Controller.php" afterPath="$PROJECT_DIR$/app/libraries/Controller.php" />
-      <change beforePath="$PROJECT_DIR$/app/libraries/Database.php" afterPath="$PROJECT_DIR$/app/libraries/Database.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/Model.php" afterPath="$PROJECT_DIR$/app/model/Model.php" />
-      <change beforePath="$PROJECT_DIR$/app/utils/GeneralUtils.php" afterPath="$PROJECT_DIR$/app/utils/GeneralUtils.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -282,12 +274,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542648588649</updated>
       <workItem from="1542648595562" duration="10753000" />
-      <workItem from="1542825224618" duration="2136000" />
+      <workItem from="1542825224618" duration="3408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12889000" />
+    <option name="totallyTimeSpent" value="14161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
