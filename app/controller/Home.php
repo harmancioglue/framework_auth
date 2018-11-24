@@ -8,6 +8,7 @@ class Home extends Controller
     {
         /** sample model is included */
 //       $this->mdl = $this->model('Model');
+        //test
     }
 
     public function index()
