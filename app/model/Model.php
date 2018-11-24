@@ -4,8 +4,9 @@ class Model extends BaseModel
 {
     public function getPosts()
     {
-       $this->db->query("SELECT * FROM posts");
-       $test = $this->db->getResultSet();
-       $test = 4;
+        /** sample usage of database class */
+//       $this->db->query("SELECT * FROM posts");
+//       $result= $this->db->getResultSet();
+//       return $result;
     }
 }

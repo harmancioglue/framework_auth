@@ -2,17 +2,22 @@
 
 class Home extends Controller
 {
-    private $mdl;
+//    private $mdl;
 
     public function __construct()
     {
-       $this->mdl = $this->model('Model');
+        /** sample model is included */
+//       $this->mdl = $this->model('Model');
     }
 
     public function index()
     {
-        $this->mdl->getPosts();
-        $this->mdl->getPosts();
+        /** sample usage of model */
+//      $posts = $this->mdl->getPosts();
+
+        /** sample usage of view */
+//        $data["posts"] = $posts;
+//        $this->view('index',$data);
     }
 
 }
