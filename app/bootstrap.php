@@ -5,6 +5,7 @@
 //require_once 'libraries/Core.php';
 
 require_once 'utils/GeneralUtils.php';
+require_once 'utils/SessionUtils.php';
 
 require_once 'config/db_config.php';
 

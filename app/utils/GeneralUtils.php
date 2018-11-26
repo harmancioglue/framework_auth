@@ -59,4 +59,12 @@ class GeneralUtils
     public static function getProjectPath(){
         return dirname(dirname(__FILE__));
     }
+
+    public static function isPostRequest(){
+        return $_SERVER['REQUEST_METHOD'] == 'POST';
+    }
+
+    public static function redirect($page = ''){
+        header('location:'.URL_ROOT.'/' . $page);
+    }
 }

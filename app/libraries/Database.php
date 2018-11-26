@@ -58,7 +58,7 @@ class Database
 
     public function execute()
     {
-        $this->statement->execute();
+       return $this->statement->execute();
     }
 
     public function getResultSet()
@@ -86,5 +86,11 @@ class Database
         }
 
         $this->statement->bindValue($param,$value,$type);
+    }
+
+
+    public function getRowCount()
+    {
+        return $this->statement->rowCount();
     }
 }
