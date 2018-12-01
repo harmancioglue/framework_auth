@@ -9,12 +9,12 @@
        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
            <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-                   <a class="nav-link" href="<? echo URL_ROOT; ?>">Home</a>
+                   <a class="nav-link" href="<?php echo URL_ROOT; ?>">Home</a>
                </li>
            </ul>
 
 
-           <ul class="navbar-nav ml-auto">
+           <ul class="navbar-nav ml-auto float-right">
 
                <?php if (!SessionUtils::isUserLogin()) { ?>
                <li class="nav-item">

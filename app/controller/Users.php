@@ -58,7 +58,9 @@ class Users extends Controller
                 GeneralUtils::redirect('users/login');
                 exit;
             }else{
-                /** TODO */
+                SessionUtils::createFlashMessage('register','Sorry.A problem ocurred. Try again!','warning');
+                GeneralUtils::redirect('users/login');
+                exit;
             }
         }
 
@@ -111,11 +113,13 @@ class Users extends Controller
             if ($loggedInUser != false){
 
                 SessionUtils::setUser($loggedInUser);
-                GeneralUtils::redirect();
+                GeneralUtils::redirect('posts');
                 exit;
 
             }else{
-                //TODO
+                SessionUtils::createFlashMessage('register','Sorry.A problem ocurred. Try again!','warning');
+                GeneralUtils::redirect('users/login');
+                exit;
             }
 
         }
